@@ -19,6 +19,7 @@
 [Rr]eleases/
 x64/
 x86/
+ARM64/
 bld/
 [Bb]in/
 [Oo]bj/
@@ -31,6 +32,8 @@ bld/
 
 # Visual Studio 2017 auto generated files
 Generated\ Files/
+
+Generated/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -221,7 +224,7 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
-# Including strong name files can present a security risk 
+# Including strong name files can present a security risk
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
 #*.snk
 
@@ -301,6 +304,8 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/**
 # !tools/packages.config
+ImageResizer/tools/**
+!ImageResizer/tools/packages.config
 
 # Tabs Studio
 *.tss
@@ -317,7 +322,7 @@ __pycache__/
 # OpenCover UI analysis results
 OpenCover/
 
-# Azure Stream Analytics local run output 
+# Azure Stream Analytics local run output
 ASALocalRun/
 
 # MSBuild Binary and Structured Log
@@ -326,5 +331,25 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
-# MFractors (Xamarin productivity tool) working folder 
+# MFractors (Xamarin productivity tool) working folder
 .mfractor/
+
+# Temp build files
+src/settings/settings-html/200.html
+src/settings/settings-html/404.html
+
+# Temp telemetry files.
+src/common/Telemetry/*.etl
+
+# Don't ignore MergeModules
+!**/MergeModules/Release/
+!**/MergeModules/Debug/
+/src/modules/previewpane/SvgThumbnailProvider/$(SolutionDir)$(Platform)/$(Configuration)/modules/FileExplorerPreview/SvgThumbnailProvider.xml
+/src/modules/powerrename/ui/RCa24464
+/src/modules/powerrename/ui/RCb24464
+
+# Generated installer file for Monaco source files.
+/installer/PowerToysSetup/MonacoSRC.wxs
+
+# MSBuildCache
+/MSBuildCacheLogs/
